@@ -19,6 +19,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     NSLog(@"checking version change");
+    
+    //---- added new label --
+    UILabel *lbl = [[UILabel alloc] initWithFrame:self.view.frame];
+    lbl.text = @"Hello label";
+    [self.view addSubview:lbl];
+    //End
 }
 
 - (void)didReceiveMemoryWarning {
